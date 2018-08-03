@@ -9,4 +9,4 @@ Heading with animated text;
 
 To preview please click link below:
 
-<a href="https://rawgit.com/MrsNehaKunalPadia/single-webpage/master/theme.html" target="_blank">https://rawgit.com/MrsNehaKunalPadia/single-webpage/master/theme.html</a>
+# https://rawgit.com/MrsNehaKunalPadia/single-webpage/master/theme.html
