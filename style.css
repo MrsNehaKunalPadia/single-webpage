@@ -1,0 +1,505 @@
+﻿
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgba(47,58,94,1);
+    /*background-color: rgb(255, 252, 252);*/
+    background-color: rgba(0, 173, 239,0.5);
+}
+
+.body-content {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.page-table {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    top: 0;
+    position: absolute;
+    left: 0;
+}
+.page-row {
+    background: #fff;
+}
+.linksDivForMiddle {
+    max-width: 1000px;
+    margin: auto;
+}
+.center {
+    text-align: center;
+}
+.whiteDiv {
+    background:#fff;
+}
+.leftDiv {
+    float:left;
+}
+.rightDiv {
+    float: right;
+}
+.container {
+    padding: 20px;
+}
+.Row {
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
+}
+.row-full {
+    width: 100vw;
+    position: relative;
+    height: 100px;
+}
+.cinzelFont {
+    font: normal normal normal 44px/1.4em cinzel,serif;
+   
+    color: #2F3A5E;
+}
+.font_onBGAnimated {
+    font: normal normal normal 18px/1.4em 'eb garamond',serif;   
+    color: #2F3A5E;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    margin: auto;
+}
+    .font_onBGAnimated span {
+        background: rgba(255,255,255, 0.5);
+        border-radius:100%;
+        padding: 10px;
+    }
+.cinzelFont span {
+    background: rgba(255,255,255, 0.5);
+    padding:7px;
+}
+
+.middleOfFirstFrame {
+    text-align: center;
+    /*width: 70%;
+    height: 20%;*/
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /*border: 1px solid #2F3A5E;*/
+    /*background: rgba(255,255,255, 0.5);*/
+}
+.header {
+    position: relative;
+    background-position-x: center;
+    z-index:10000;
+}
+.threeLinksForFrames {
+    float: right;
+    padding-right: 30px;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    background: rgba(255,255,255, .8);
+    padding-left: 35px;
+}
+.fullHeight {
+    height: 100vh;
+}
+
+
+
+.frameLinksImg {
+    float: right;
+    padding:10px;
+}
+.myPathImg {
+    float: left;
+    padding: 10px;
+    margin-left: 32px;
+}
+.paddingTen{
+    padding-top:10px;
+}
+.noTopMargin {
+    margin-top: 0px;
+}
+.clearfix {
+    overflow: auto;
+}
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+.multicolrAnimation {
+    animation: color-me-in ease-in-out 10s infinite;
+    background: url("images/bg1.jpg") no-repeat;
+    position: relative;
+    width: 100%;
+    /*max-height: 800px;*/
+    min-height: 300px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;
+    background-color: #7ec0ee;
+}
+
+    @keyframes color-me-in {
+        0% {
+            background: url("images/bg1.jpg") no-repeat;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-size: 100% 100%;
+            background-color: #7ec0ee;
+        }
+        /* Adding a step in the middle */
+        50% {
+            background: url("images/bg2.jpg") no-repeat;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-size: 100% 100%;
+            background-color: #7ec0ee;
+          
+        }
+
+        100% {
+            background: url("images/bg3.large.png") no-repeat;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-size: 100% 100%;
+            background-color: #7ec0ee;
+        }
+    }
+@media only screen and (max-width: 600px) {
+    .multicolrAnimation {
+        min-height: 200px;
+        height: 70vh;
+    }
+}
+
+a#topbutton {
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+@-webkit-keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+a#topbutton:link, aa#topbutton:visited {
+    background: url(images/model2_yellow.png) center center no-repeat;
+}
+
+.topwrapwrapper {
+    position: relative;
+    z-index: 0;
+    min-height: 900px;
+    width: 100%;
+    float: left;
+}
+
+
+.topwrap {
+    position: absolute;
+    z-index: 100;
+    top: 300px;
+    width: 100%;
+    float: left;
+}
+
+
+
+.topbuttonwrapper {
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 62px;
+    top:75%;
+    text-align:center;
+    color:#fff;
+}
+
+
+a#topbutton:link, aa#topbutton:visited {
+    width: 102px;
+    height: 62px;
+    opacity: 0.7;
+    display: block;
+    margin: 0 auto;
+}
+
+a#topbutton:hover {
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.text-danger {
+    color: #b94a48;
+}
+
+.textJustify{
+    text-align:justify;
+}
+
+.slide-wrap {
+    background-color: #9fd8fb;
+    padding-bottom:10px;
+}
+
+
+.slider {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+   
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+@supports (scroll-snap-type) {
+    .slider > a {
+        display: none;
+    }
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    
+    width: auto;
+    padding: 16px;
+    margin-top: 90px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: 20px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.5);
+        color:white;
+    }
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px
+    }
+}
+
+
+.typewriter h2 {
+    color: black;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .12em;
+    animation: typing 6.5s steps(30, end) infinite, blink-caret .5s step-end infinite;
+    -webkit-animation: typing 6.5s steps(30, end) infinite, blink-caret .5s step-end infinite;
+    -o-animation: typing 6.5s steps(30, end) infinite, blink-caret .5s step-end infinite;
+    -moz-animation: typing 6.5s steps(30, end) infinite, blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}
+
+.sign__word2 {
+    background-image: url("images/wall.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #141414;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 1;
+    color: #c6e2ff;
+    -webkit-animation: neon .08s ease-in-out infinite alternate;
+    animation: neon .08s ease-in-out infinite alternate;
+}
+
+.sign__word {
+    background-image: url("images/wall.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #141414;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 2.6rem;
+    text-align: center;
+    line-height: 1;
+    color: #c6e2ff;
+    -webkit-animation: neon .08s ease-in-out infinite alternate;
+    animation: neon .08s ease-in-out infinite alternate;
+}
+
+/*-- Animation Keyframes --*/
+@-webkit-keyframes neon {
+    from {
+        text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
+    }
+
+    to {
+        text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px #1e84f2;
+    }
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
+    }
+
+    to {
+        text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px #1e84f2;
+    }
+}
+
+.bulb {
+    background: radial-gradient(circle 60px,rgba(255,255,255,0.5) 47%,rgba(255,255,255,0) 60%,rgba(255,255,255,0) 30%);
+    padding-top: 76px;
+}
+
+    .bulb:hover {
+        background: radial-gradient(circle 120px,rgba(255,255,255,0.8) 47%,rgba(255,255,255,0) 60%,rgba(255,255,255,0) 30%);
+       
+    }
+
+.linksMainDiv {
+    background-color: rgba(0, 173, 239,0.5);
+}
